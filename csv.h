@@ -817,8 +817,8 @@ void parse_line(char *line, char **sorted_col,
       sorted_col[i] = col_begin;
     }
   }
-  if (line != nullptr)
-    throw ::io::error::too_many_columns();
+  //if (line != nullptr)
+  //  throw ::io::error::too_many_columns();
 }
 
 template <unsigned column_count, class trim_policy, class quote_policy>
